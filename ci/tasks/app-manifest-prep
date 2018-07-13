@@ -1,21 +1,9 @@
 #!/bin/bash
 
-ls
-
-pwd
-
-ls -al ./concoursedemo
-
 cp ./concoursedemo/manifest.yml ./app-manifest-output/manifest.yml
-
-cat ./app-manifest-output/manifest.yml
 
 cd concoursedemo
 
 ./mvnw clean install
 
 cp target/concoursedemo-0.0.1-SNAPSHOT.jar ../app-manifest-output/
-
-cd ..
-
-ls -al ./app-manifest-output
