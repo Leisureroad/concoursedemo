@@ -1,0 +1,32 @@
+groups:
+- name: main
+  jobs:
+  - deploy-app
+
+resources:
+- name: concourse-sample
+  type: git
+  source:
+    branch: master
+    uri: https://github.com/Leisureroad/concoursedemo.git
+- name: PWS
+  type: cf
+  source:
+    api: {{pws-api}}
+    organization: {{pws-organization}}
+    username: {{deploy-username}}
+    password: {{deploy-password}}
+    skip_cert_check: true
+    space: {{pws-space}}
+
+jobs:
+- name: deploy-app
+  serial: true
+  public: true
+  plan:
+  - get: concourse-pipeline-samples
+    trigger: true
+  - put: PWS
+    params:
+      manifest: manifest.yml
+      path: ./
