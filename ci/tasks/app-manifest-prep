@@ -4,6 +4,8 @@ ls
 
 pwd
 
-cp concoursedemo/manifest.yml > ./app-manifest-output/manifest.yml
+ls -al ./concoursedemo
+
+cp ./concoursedemo/manifest.yml > ./app-manifest-output/manifest.yml
 
 cat ./app-manifest-output/manifest.yml
