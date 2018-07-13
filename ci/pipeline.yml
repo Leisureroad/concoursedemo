@@ -26,6 +26,8 @@ jobs:
   plan:
   - get: concourse-sample
     trigger: true
+  - task:
+    file: concoursedemo/ci/tasks/app-manifest-prep.yml
   - put: PWS
     params:
       manifest: /tmp/build/get/concoursedemo/manifest.yml
