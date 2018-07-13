@@ -24,7 +24,7 @@ jobs:
   serial: true
   public: true
   plan:
-  - get: concourse-pipeline-samples
+  - get: concourse-sample
     trigger: true
   - put: PWS
     params:
