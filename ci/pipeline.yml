@@ -28,5 +28,5 @@ jobs:
     trigger: true
   - put: PWS
     params:
-      manifest: concoursedemo/manifest.yml
+      manifest: /tmp/build/get/concoursedemo/manifest.yml
       path: ./
