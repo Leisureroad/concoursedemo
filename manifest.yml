@@ -3,4 +3,4 @@ applications:
   memory: 1G
   routes:
   - route: concoursedemo.pcfdemo.com
-  path: target/concoursedemo-0.0.1-SNAPSHOT.jar
+  path: concoursedemo-0.0.1-SNAPSHOT.jar
