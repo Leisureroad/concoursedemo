@@ -1,4 +1,4 @@
----
+#---
 #platform: linux
 #
 #image_resource:
@@ -6,7 +6,7 @@
 #  source:
 #    repository: pivotalservices/docker-concourse-cf-tools
 #    tag: "latest"
-
+---
 platform: linux
 
 image_resource:
