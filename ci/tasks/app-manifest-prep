@@ -9,3 +9,7 @@ ls -al ./concoursedemo
 cp ./concoursedemo/manifest.yml ./app-manifest-output/manifest.yml
 
 cat ./app-manifest-output/manifest.yml
+
+cd concoursedemo
+
+./mvnw clean install
