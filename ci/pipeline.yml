@@ -31,4 +31,4 @@ jobs:
   - put: PWS
     params:
       manifest: app-manifest-output/manifest.yml
-      path: concoursedemo/
+      path: ./
