@@ -4,7 +4,7 @@ groups:
   - deploy-app
 
 resources:
-- name: concourse-sample
+- name: concoursedemo
   type: git
   source:
     branch: master
@@ -24,7 +24,7 @@ jobs:
   serial: true
   public: true
   plan:
-  - get: concourse-sample
+  - get: concoursedemo
     trigger: true
   - task: prepare-manifest
     file: concoursedemo/ci/tasks/app-manifest-prep.yml

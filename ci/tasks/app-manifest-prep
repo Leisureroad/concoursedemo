@@ -1,6 +1,6 @@
 #!/bin/bash
 
 
-cp ./concourse-samples/manifest.yml > ./app-manifest-output/manifest.yml
+cp ./concoursedemo/manifest.yml > ./app-manifest-output/manifest.yml
 
 cat ./app-manifest-output/manifest.yml
