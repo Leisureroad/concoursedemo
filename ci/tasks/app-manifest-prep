@@ -14,6 +14,8 @@ cd concoursedemo
 
 ./mvnw clean install
 
+cd ..
+
 cp target/concoursedemo-0.0.1-SNAPSHOT.jar ./app-manifest-output/
 
 ls -al ./app-manifest-output
